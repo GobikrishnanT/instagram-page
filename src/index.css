@@ -1,13 +1,139 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.checkBorder {
+  border: 1px solid red;
+}
+
+.p-5 {
+  padding: 5px;
+}
+.p-10 {
+  padding: 10px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-flex-row {
+  direction: row;
+}
+
+.display-flex-col {
+  direction: col;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+
+/* component-based */
+.header {
+  background-color: aliceblue;
+}
+.header-font {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.i-searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(217, 212, 212);
+  border-radius: 5px;
+}
+.i-searchBar input {
+  background :none;
+  height: 100%;
+  padding: 8px 0px 8px 3px;
+  outline-style: none;
+  border: none;
+}
+.i-searchBar input:focus  {
+  outline: none;
+}
+
+.i-button {
+  border-radius: 5px;
+  padding: 5px;
+  color: inherit;
+  margin: 5px;
+}
+
+.containedTypeButton {
+  background-color: rgb(63, 104, 238);
+  border: none;
+}
+.textTypeButton {
+  border: none;
+  background : none;
+}
+.textTypeButton:hover {
+  border : 1px solid red
+}
+.outLinedTypeButton {
+  border : 1px solid ;
+  border-radius: 5px;
+}
+
+.content-box {
+  max-height: calc(100vh - 230px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.image-container {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.user-info-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  background-color: aliceblue;
+  border: 1px solid;
+}
+
+.width-100 {
+  width: 100%;
+}
+.width-70-per {
+  width: 70%;
+}
+
+.user-misc-info {
+  margin: 5px 0px;
+}
+
+.user-info-icon {
+  padding-right: 5px;
 }
